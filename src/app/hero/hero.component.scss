@@ -1,0 +1,53 @@
+.hero{
+    margin-top: 130px;
+    display: flex;
+}
+
+.hero-left-side{
+    display: flex;
+    flex-direction: column;
+    min-width: 50vw;
+    
+    .hero-title{
+        h1{
+            font-size: 75px;
+            letter-spacing: -2px;
+            line-height: 90px;
+            margin-bottom: 0px;
+            color: hsl(260, 8%, 14%);
+        }
+    }
+        
+    .hero-description{
+        max-width: 50ch;
+        
+        h3{
+            margin-top: 0;
+            font-weight: 400;
+            color: hsl(257, 7%, 63%);
+        }
+    }
+
+    .hero-cta-button{
+        margin-top: 25px;
+
+        .hero-button{
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            padding: 13px 25px;
+        }
+    }
+}
+
+
+.hero-right-side{
+    overflow: visible;
+}
+
+.hero-image{
+    img{
+        width: 800px;
+    }    
+}

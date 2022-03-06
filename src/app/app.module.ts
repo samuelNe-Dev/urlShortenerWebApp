@@ -9,6 +9,7 @@ import { StatisticsComponent } from './statistics/statistics.component';
 import { InfoCardComponent } from './statistics/info-card/info-card.component';
 import { CtaSectionComponent } from './cta-section/cta-section.component';
 import { FooterComponent } from './footer/footer.component';
+import { LinkInputComponent } from './link-input/link-input.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     StatisticsComponent,
     InfoCardComponent,
     CtaSectionComponent,
-    FooterComponent
+    FooterComponent,
+    LinkInputComponent
   ],
   imports: [
     BrowserModule,
