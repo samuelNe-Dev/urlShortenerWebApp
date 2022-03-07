@@ -1,0 +1,43 @@
+.stats-container{
+    padding-bottom: 150px;
+    min-width: 100vw !important;
+    background-color: hsl(230, 25, 95.3);
+    padding-top: 150px;
+}
+
+.stats-headline-conntainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats-title h1{
+    margin-bottom: 0px !important;
+}
+
+.stats-description{
+    max-width: 45ch;
+    text-align: center;
+    color: hsl(257, 7%, 63%);
+    font-size: 16px;
+}
+
+.stats-cards{
+    display: flex;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.stats-card{
+    padding: 30px 30px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.stats-card:nth-child(2){
+    margin-top: 50px;
+}
+.stats-card:nth-child(3){
+    margin-top: 100px;
+}
