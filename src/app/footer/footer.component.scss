@@ -1,0 +1,44 @@
+.footer-container{
+    background-color: hsl(260, 8%, 14%);
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.container{
+    margin-top: 0px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links-section{
+    display: flex;
+    gap: 100px;
+}
+
+.footer-link-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link-header{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-link{
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: hsl(257, 7%, 63%);
+    text-decoration: none;
+}
+
+.footer-social-media-section{
+    display: flex;
+    gap: 15px;
+}
