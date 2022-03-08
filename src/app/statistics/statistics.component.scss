@@ -24,20 +24,46 @@
 
 .stats-cards{
     display: flex;
-    gap: 30px;
     margin-top: 80px;
 }
-
+.card-connecting-line{
+    width: 100px;
+    background-color: hsl(180, 66%, 49%);
+    height: 8px;
+    align-self: center;
+    margin-top: 80px;
+}
 .stats-card{
-    padding: 30px 30px;
+    padding: 40px 30px;
     background-color: white;
     border-radius: 10px;
-
+    position: relative;
 }
 
-.stats-card:nth-child(2){
-    margin-top: 50px;
+.stats-card-title{
+    margin-top: 30px;
 }
+
 .stats-card:nth-child(3){
-    margin-top: 100px;
+    top: 50px;
+}
+.stats-card:nth-child(5){
+    top: 100px;
+}
+
+.stats-card-icon{
+    background-color: hsl(257, 27%, 26%);
+    display: flex;
+    border-radius: 50px;
+    height: 85px;
+    width: 85px;
+    margin-top: -80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-card-description{
+    font-size: 16px;
+    color: hsl(257, 7%, 63%);
+    font-weight: 300;
 }
