@@ -42,3 +42,31 @@
     display: flex;
     gap: 15px;
 }
+
+@media screen and (max-width: 450px){
+    .footer-container{
+        padding-top: 50px;
+    }
+    .footer-links{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-links-section{
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 40px;
+    }
+
+    .footer-link-section{
+        align-items: center;
+    }
+
+    .footer-link{
+        margin-top: 5px;
+    }
+
+    .footer-social-media-section{
+        gap: 25px;
+    }
+}

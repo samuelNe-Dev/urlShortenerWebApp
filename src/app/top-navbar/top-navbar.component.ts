@@ -12,4 +12,10 @@ export class TopNavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openHamburgerMenu() {
+    const icons = document.querySelectorAll('.icon');
+    icons.forEach(icon => {
+      icon.classList.toggle("open");
+    });
+  }
 }

@@ -34,6 +34,8 @@
     margin-top: 80px;
 }
 .stats-card{
+    display: flex;
+    flex-direction: column;
     padding: 40px 30px;
     background-color: white;
     border-radius: 10px;
@@ -66,4 +68,55 @@
     font-size: 16px;
     color: hsl(257, 7%, 63%);
     font-weight: 300;
+}
+
+
+@media screen and (max-width: 450px){
+    .stats-container{
+        padding-bottom: 50px;
+    }
+
+    .stats-title{
+        text-align: center;
+        
+        h1{
+            font-size: 25px;
+        }
+    }
+
+    .stats-cards{
+        flex-direction: column;
+    }
+
+    .stats-card{
+        align-items: center;
+    }
+
+    .stats-card:nth-child(3){
+        margin-top: 40px;
+        top: 0px;
+    }
+
+    .stats-card:nth-child(5){
+        margin-top: 40px;
+        top: 0px;
+    }
+
+    .stats-card-description{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .card-connecting-line{
+        width: 8px;
+        background-color: hsl(180, 66%, 49%);
+        height: 50px;
+        align-self: center;
+        margin-top: 0px;
+    }
+
+    .stats-card-title{
+        margin-top: 0px;
+    }
 }

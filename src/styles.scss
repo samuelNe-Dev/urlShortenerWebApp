@@ -11,3 +11,13 @@ html, body{
 .container{
     margin: 50px 100px;
 }
+
+@media screen and (max-width: 450px){
+    .container{
+        margin: 25px 20px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    
+}

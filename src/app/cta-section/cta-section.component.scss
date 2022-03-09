@@ -18,3 +18,19 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+
+@media screen and (max-width: 450px){
+    .cta-container{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .cta-title{
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .cta-button{
+        font-size: 18px;
+    }
+}
