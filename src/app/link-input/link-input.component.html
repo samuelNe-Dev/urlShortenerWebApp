@@ -1,6 +1,27 @@
 <div class="container">
-    <div class="link-input-container">
-        <input type="text" class="link-input-field" placeholder="Shorten a link here...">
-        <a class="rounded-corner-button" href="">Shorten It!</a>
+    
+        <form (ngSubmit)="shortenLink()">
+            <div class="link-input-container">
+                <input [(ngModel)] = "urlToShorten" [ngModelOptions]="{standalone: true}" type="text" class="link-input-field" placeholder="Shorten a link here..."> 
+                <button type="submit" class="rounded-corner-button">Shorten It!</button>
+            </div>
+        </form>
+
+           
+    
+
+    <div class="result-history">
+        
+        
+        <div *ngFor="let link of shortenedUrls">
+            <div class="link-entry">
+                <h3>{{link.urlOriginal}}</h3>
+                <div class="dividing-line"></div>
+                <div class="right-side-link-entry">
+                    <h3><a [href]="link.urlShortened" class="short-link">{{link.urlShortened}}</a></h3>
+                    <a class="rounded-corner-button">Copy</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

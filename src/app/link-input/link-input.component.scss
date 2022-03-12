@@ -1,9 +1,8 @@
 .link-input-container{
-    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 110px;
 
     background-color: hsl(257, 27%, 26%);
     background-image: url('/src/assets/images/bg-shorten-desktop.svg');
@@ -16,6 +15,12 @@
     border-radius: 10px;
     gap: 20px;
     padding: 0px 30px;
+
+    position: relative;
+    top: -80px;
+    margin-top: 150px;
+
+
 }
 
 .link-input-field{
@@ -26,18 +31,105 @@
     width: 70%;
 }
 
-@media screen and (max-width: 450px){
+.result-history{
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px !important;
+}
+
+.link-entry{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding: 5px 30px;
+    border-radius: 10px;
+
+    h3{
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+}
+
+.right-side-link-entry{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+    .short-link{
+        cursor: pointer;
+        text-decoration: none;
+        color: hsl(180, 66%, 49%);
+    }
+
+    .rounded-corner-button{
+        font-size: 14px;
+        padding-top: 10px ;
+        padding-bottom: 10px;
+        
+    }
+}
+
+
+@media screen and (max-width: 750px){
     .link-input-container{
-        flex-direction: column;
+        flex-direction: column !important;
 
         .rounded-corner-button{
-            width: 90%;
+            width: 90% !important;
             text-align: center;
         }
     }
 
     .link-input-field{
-        width: 90%;
+        width: 90% !important;
     }
 
+}
+
+@media screen and(max-width: 1050px){
+    .link-input-container{
+        flex-direction: row;
+        .rounded-corner-button{
+            font-size: 14px;
+            width: auto;
+            text-align: center;
+        }
+    }
+
+    .link-entry{
+        flex-direction: column;
+        align-items: start;
+        padding: 20px 20px 10px 20px;
+        h3{
+            margin-top: 0px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    .right-side-link-entry{
+        
+        flex-direction: column;
+        align-items: start;
+        gap: 0px;
+        padding-bottom: 10px;
+        width: auto;
+        margin-right: 20px;
+        .rounded-corner-button{
+            width: auto;
+        }
+ 
+        h3{
+            margin-top: 30px;
+        }
+   }
+
+    .dividing-line{
+        height: 1px;
+        width: 100%;
+        background-color: lightgray;
+        
+    }
 }

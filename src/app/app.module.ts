@@ -10,6 +10,9 @@ import { InfoCardComponent } from './statistics/info-card/info-card.component';
 import { CtaSectionComponent } from './cta-section/cta-section.component';
 import { FooterComponent } from './footer/footer.component';
 import { LinkInputComponent } from './link-input/link-input.component';
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,13 @@ import { LinkInputComponent } from './link-input/link-input.component';
     InfoCardComponent,
     CtaSectionComponent,
     FooterComponent,
-    LinkInputComponent
+    LinkInputComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
