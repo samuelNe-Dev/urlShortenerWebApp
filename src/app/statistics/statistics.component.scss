@@ -2,7 +2,7 @@
     padding-bottom: 150px;
     min-width: 100vw !important;
     background-color: hsl(230, 25, 95.3);
-    padding-top: 150px;
+    background-position: top 50px;
 }
 
 .stats-headline-conntainer{
@@ -71,7 +71,7 @@
 }
 
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 1050px){
     .stats-container{
         padding-bottom: 50px;
     }

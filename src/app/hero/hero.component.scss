@@ -93,5 +93,37 @@
 }
 
 @media screen and (max-width: 1050px){
+    .hero{
+        flex-direction: column-reverse;
+        margin-top: 0px;
+        align-items: center;
+    }
+
+    .hero-image{
+        img{
+            width: 500px;
+        }
+    }
+
+    .hero-left-side{
+        align-items: center;
+    }
     
+    .hero-title{
+        h1{
+            font-size: 60px !important;
+            line-height: 65px !important;
+            font-weight: 600;
+        }
+        text-align: center;
+    }
+
+    .hero-description{
+        h3{
+            font-size: 18px;
+            line-height: 30px;
+        }
+        text-align: center;
+        margin-top: 20px;
+    }
 }
